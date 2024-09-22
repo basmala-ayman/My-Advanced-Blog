@@ -6,10 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Advanced Blog">
   <title>My Advanced Blog</title>
+  <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
   <!-- Font Awesome -->
-  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"> -->
-  <!-- css style file -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <!-- My CSS Style -->
   <link rel="stylesheet" href="style.css">
 
 </head>
@@ -50,16 +51,16 @@
     <div class="row">
       <!-- cards column -->
       <div class="col-lg-8">
-        <div class="card w-100">
+        <article class="card w-100">
           <div class="card-body">
             <h2 class="card-title mb-3">First Advanced Article Title</h2>
             <p class="card-text">This is some sample text for the first article. The full content
               of the article could be displayed here. Feel free to add more content and style it as needed.</p>
             <a href="#" class="btn btn-color">Read More</a>
           </div>
-        </div> <!-- /card-1 -->
+        </article> <!-- /card-1 -->
 
-        <div class="card w-100">
+        <article class="card w-100">
           <div class="card-body">
             <h2 class="card-title mb-3">Second Advanced Article Title</h2>
             <p class="card-text">This is some sample text for the second article. The full content
@@ -67,9 +68,9 @@
             </p>
             <a href="#" class="btn btn-color">Read More</a>
           </div>
-        </div> <!-- /card-2 -->
+        </article> <!-- /card-2 -->
 
-        <div class="card w-100">
+        <article class="card w-100">
           <div class="card-body">
             <h2 class="card-title mb-3">Third Advanced Article Title</h2>
             <p class="card-text">This is some sample text for the third article. Challenge yourself
@@ -78,7 +79,7 @@
             </p>
             <a href="#" class="btn btn-color">Read More</a>
           </div>
-        </div> <!-- /card-3 -->
+        </article> <!-- /card-3 -->
       </div>
       <!-- sidebar column -->
       <div class="col-lg-4">
@@ -130,10 +131,8 @@
   </section>
 
   <!-- toTop Button -->
-  <!-- <button class="btn btn-primary hidden" id="toTop"><i class="fa-solid fa-arrow-up"></i></button> -->
-  <button class="btn btn-color hidden" id="toTop">Top</button>
+  <button class="btn btn-color hidden" id="toTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
 
-  
   <footer class="footer">
     <!-- contact form -->
     <div class="container col-lg-6">
@@ -145,10 +144,10 @@
         </div>
         <div class="row mb-3">
           <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
-            placeholder="Enter your problem"></textarea>
+            placeholder="Enter Your Problem"></textarea>
         </div>
         <div class="row">
-          <button type="submit" class="btn bg-white">Sign in</button>
+          <button type="submit" class="btn bg-white">Send</button>
         </div>
       </form>
       <p>All Rights Reserved © 2024 | Designed by Basmala</p>

@@ -3,8 +3,6 @@ let toTop = document.getElementById('toTop')
 
 window.onscroll = function () {
     if (window.scrollY >= 100) {
-        // toTop.style.display = 'block';
-        // toTop.style.opacity = '1';
         toTop.classList.remove('hidden');
         toTop.classList.add('show');
     } else {

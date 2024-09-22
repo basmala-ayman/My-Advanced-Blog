@@ -9,7 +9,7 @@ This project is a simple blog website built using **HTML**, **CSS**, and **JavaS
    - The main webpage structure that includes a navigation bar, a section with blog articles, a sidebar for additional information, and a footer with a contact form. This file also links to Bootstrap and Font Awesome for quick styling and icons.
 
 2. **style.css**:
-   - Contains custom styles for the website. Variables are used for colors and spacing to make styling easier. CSS transitions are applied for smooth hover effects and animations, such as the "Back to Top" button appearing as you scroll.
+   - Contains custom styles for the website. Variables are used for colors and spacing to make styling easier. CSS transitions are applied for smooth hover effects, such as the "Back to Top" button appearing as you scroll.
 
 3. **main.js**:
    - Handles interactivity, such as the "Back to Top" button. When the user scrolls down 100px from the top, the button becomes visible, and clicking it smoothly scrolls the page back to the top.

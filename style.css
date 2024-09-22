@@ -1,5 +1,4 @@
 :root {
-    /* --main-color: #0D6EFD; */
     --main-color: #004085;
     --hovering-color: #003267;
     --text-color: white;
@@ -140,7 +139,6 @@ h2 {
 .show {
     visibility: visible;
     opacity: 1;
-    transition: opacity 0.3s ease, visibility 0s;
 }
 
 /* end toTop Button style */
