@@ -1,0 +1,184 @@
+:root {
+    /* --main-color: #0D6EFD; */
+    --main-color: #004085;
+    --hovering-color: #003267;
+    --text-color: white;
+    --main-padding: 20px;
+    --main-margin: 20px;
+    --main-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    --border-radius: 8px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+}
+
+/* start common properties */
+.navbar .navbar-nav a:hover,
+.sidebar ul li a:hover {
+    text-decoration: underline;
+}
+
+.btn,
+.navbar .navbar-toggler[aria-expanded="false"],
+.footer .form-control {
+    border: none;
+}
+
+.navbar .navbar-toggler:focus,
+.btn:focus,
+.footer .form-control:focus {
+    box-shadow: none;
+}
+
+/* end common properties */
+
+/* start components */
+h2 {
+    font-size: 1.5rem !important;
+}
+
+.btn-color {
+    background-color: var(--main-color);
+    color: var(--text-color);
+}
+
+.btn-color:hover,
+.btn-color:active {
+    color: var(--text-color);
+    background-color: var(--hovering-color);
+}
+
+/* end components */
+
+/* start navbar style */
+.navbar {
+    background-color: var(--main-color);
+    position: relative;
+}
+
+.navbar .navbar-toggler {
+    border-color: var(--text-color);
+}
+
+/* line style */
+.navbar::after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 5px;
+    background-color: var(--main-color);
+}
+
+/* end navbar style */
+
+/* start card section style */
+.card {
+    margin-bottom: var(--main-margin);
+    box-shadow: var(--main-shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card p {
+    color: #424242;
+    line-height: 1.6;
+}
+
+/* end card section style */
+
+/* start sidebar style */
+.sidebar {
+    padding: var(--main-padding);
+    border-radius: var(--border-radius);
+    box-shadow: var(--main-shadow);
+    margin-bottom: var(--main-margin);
+}
+
+.sidebar h3 {
+    margin-bottom: var(--main-margin);
+    font-size: 1.2rem;
+}
+
+.sidebar ul li a {
+    margin-bottom: 10px !important;
+    color: var(--main-color);
+}
+
+.sidebar ul li a:hover {
+    color: var(--hovering-color);
+}
+
+/* end sidebar style */
+
+/* start toTop Button style */
+.hidden,
+.show {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    font-size: 22px;
+    padding: 8px 16.25px;
+    border-radius: var(--border-radius);
+    outline: 2px solid var(--hovering-color);
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0s linear 0.3s;
+}
+
+.show {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.3s ease, visibility 0s;
+}
+
+/* end toTop Button style */
+
+/* start footer style */
+.footer {
+    background-color: var(--main-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: var(--main-padding);
+    margin-top: calc(var(--main-margin * 2));
+}
+
+.footer h2 {
+    margin-bottom: var(--main-margin);
+}
+
+.footer .form-control {
+    caret-color: var(--main-color);
+    color: var(--main-color);
+}
+
+.footer .form-control::selection {
+    background-color: var(--main-color);
+    color: var(--text-color);
+}
+
+.footer button {
+    color: var(--main-color);
+}
+
+.footer button:hover {
+    color: var(--hovering-color);
+    font-weight: 600;
+}
+
+.footer p {
+    margin: var(--main-margin) 0 0;
+}
+
+/* end footer style */
