@@ -119,26 +119,27 @@ h2 {
 /* end sidebar style */
 
 /* start toTop Button style */
-.hidden,
-.show {
+.btnHidden,
+.btnShow {
     position: fixed;
     right: 20px;
     bottom: 20px;
     font-size: 22px;
     padding: 8px 16.25px;
-    border-radius: var(--border-radius);
-    outline: 2px solid var(--hovering-color);
+    border-radius: 50%;
+    border: 2px solid var(--hovering-color);
 }
 
-.hidden {
+.btnHidden {
     visibility: hidden;
     opacity: 0;
     transition: opacity 0.3s ease, visibility 0s linear 0.3s;
 }
 
-.show {
+.btnShow {
     visibility: visible;
     opacity: 1;
+    transition: opacity 0.3s ease, visibility 0s;
 }
 
 /* end toTop Button style */
@@ -177,6 +178,12 @@ h2 {
 
 .footer p {
     margin: var(--main-margin) 0 0;
+}
+
+@media (max-width: 430px) {
+    .footer p {
+        font-size: 12px;
+    }
 }
 
 /* end footer style */

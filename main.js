@@ -1,13 +1,12 @@
 let toTop = document.getElementById('toTop')
-// toTop.classList.add('hidden');
 
 window.onscroll = function () {
     if (window.scrollY >= 100) {
-        toTop.classList.remove('hidden');
-        toTop.classList.add('show');
+        toTop.classList.remove('btnHidden');
+        toTop.classList.add('btnShow');
     } else {
-        toTop.classList.remove('show');
-        toTop.classList.add('hidden');
+        toTop.classList.remove('btnShow');
+        toTop.classList.add('btnHidden');
     }
 }
 
